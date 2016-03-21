@@ -13,5 +13,15 @@ Filename2 wordA21 wordB21 simA21B21 wordA22 wordB22 simA22B22 wordA23 wordB23 si
  
 They are printed out in the same order in the command line.
 
+Part 2: process.c 
+
+Write your second C program, called process.c, to print the most similar word pairs concurrently using multiple processes. The program first reads file names of all data sets from the command line. For each data set, it creates a child process. Each child process first reads all data from the file, and searches for the top 3 most similar word pairs in that data set, and sends the found results to the main process via a Unix pipe. It is required that all child processes need to process the assigned datasets concurrently, not one by one sequentially. The main program will print out all these results along with the file name of the data set to the standard output. If you have more than one data set, the outputs should be printed out in the same order in the command line. The output of one data set occupies one line as follows:
+Filename1 wordA11 wordB11 simA11B11 wordA12 wordB12 simA12B12 wordA13 wordB13 simA13B13
+Filename2 wordA21 wordB21 simA21B21 wordA22 wordB22 simA22B22 wordA23 wordB23 simA23B23
+
+Part 3: thread.c
+
+Write another Pthread C program, called thread.c, to repeat the above task concurrently using multiple threads. The program creates one pthread to process each data set. Each thread searches for the top 3 most similar word pairs and for each data set and passes all results to the main program. It is required that all child threads need to process the assigned datasets concurrently, not one by one sequentially. The main program waits for all threads to finish and print out all results following the exactly same output format as above.
+
 
 */
