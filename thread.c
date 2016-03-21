@@ -2,10 +2,8 @@
  #Family Name: Sarathmohan
  #Given Name: Nidhi
  #Section: Z
- #Student number: 211934619
- #cse login: cse22011
- 
- */
+*/
+
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
